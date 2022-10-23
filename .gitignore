@@ -23,6 +23,6 @@
 hs_err_pid*
 
 # other files
-.tmp
+*.tmp
 .vscode
-.obj
+*.obj

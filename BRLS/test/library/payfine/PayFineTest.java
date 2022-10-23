@@ -37,8 +37,6 @@ public class PayFineTest {
     static void setUpBeforeClass() {
         library = Library.getInstance();
         calendar = Calendar.getInstance();
-
-        System.out.println("yooooo");
         
         library.addPatron("Test", "Person", "test@example.com", 5551234);
         patron = library.getPatron(1);
@@ -48,9 +46,7 @@ public class PayFineTest {
 
         library.issueLoan(item, patron);
         loan = library.getLoanByItemId(1);
-
-        
-
+     
         calendar.incrementDate(4);
         loan.updateStatus(1.0);
     }
